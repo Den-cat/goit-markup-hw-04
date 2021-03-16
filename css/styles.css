@@ -86,13 +86,14 @@ ol {
 .navigation-link:focus {
   color: var(--accent-color);
 }
-.mail-link,
-.tel-link {
+.tel-mail-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  display: flex;
+  align-items: center;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -349,12 +350,15 @@ ol {
   height: 100%;
   fill: var(--social-color);
   border: solid 1px var(--social-color);
+  border-radius: 4px;
 }
 
 .customer-list-link:hover,
 .customer-list-link:focus {
   fill: var(--accent-color);
+  border-color: var(--accent-color);
   border: solid 1px var(--accent-color);
+  border-radius: 4px;
 }
 
 .customer-title {
@@ -546,8 +550,7 @@ ol {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.footer-mail-link,
-.footer-tel-link {
+.footer-tel-mail-link {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
